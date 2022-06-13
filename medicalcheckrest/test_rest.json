@@ -1,0 +1,1013 @@
+{
+	"info": {
+		"_postman_id": "bc11f8fc-fe42-46ea-8ab0-216f7faddee0",
+		"name": "API REST DM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "medicines",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByIdUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 11,\r\n        \"iduser\": 2,\r\n        \"name\": \"Solmucalm\",\r\n        \"begindate\": null,\r\n        \"enddate\": null,\r\n        \"dose\": \"500ml\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "measures",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/measures/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"measures",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByIdUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/measures/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"measures",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 11,\r\n        \"iduser\": 2,\r\n        \"name\": \"Solmucalm\",\r\n        \"begindate\": null,\r\n        \"enddate\": null,\r\n        \"dose\": \"500ml\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/measures/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"measures",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notifications",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/measures/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"measures",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByIdUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/notifications/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notifications",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 11,\r\n        \"iduser\": 2,\r\n        \"name\": \"Solmucalm\",\r\n        \"begindate\": null,\r\n        \"enddate\": null,\r\n        \"dose\": \"500ml\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/measures/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"measures",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "plannings",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idmedicine\": 6,\r\n        \"day\": \"MONDAY\",\r\n        \"time\": \"15:30:00\",\r\n        \"quantity\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/plannings/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"plannings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByIdMedicine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "traitements",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idmedicine\": 6,\r\n        \"day\": \"MONDAY\",\r\n        \"time\": \"15:30:00\",\r\n        \"quantity\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/plannings/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"plannings",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByIdPlanning",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 11,\r\n        \"iduser\": 2,\r\n        \"name\": \"Solmucalm\",\r\n        \"begindate\": null,\r\n        \"enddate\": null,\r\n        \"dose\": \"500ml\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/login/david.oktay",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"login",
+								"david.oktay"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "follows",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/follows",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"follows"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 11,\r\n        \"iduser\": 2,\r\n        \"name\": \"Solmucalm\",\r\n        \"begindate\": null,\r\n        \"enddate\": null,\r\n        \"dose\": \"500ml\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 6,\r\n        \"iduser\": 1,\r\n        \"name\": \"Dafalgan perso\",\r\n        \"begindate\": \"2021-11-05T13:33:30.000+00:00\",\r\n        \"enddate\": \"2021-11-25T21:26:08.000+00:00\",\r\n        \"dose\": \"50\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/medicines/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByUserCarekeeper",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/medicines/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"medicines",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllByUserPatient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/follows/userpatient/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"follows",
+								"userpatient",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

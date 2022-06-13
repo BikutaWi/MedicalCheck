@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/btnBackRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="114dp"
+        android:fontFamily="@font/frankie_healthy"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackRegister" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:fillViewport="false">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".RegisterActivity">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="91dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Username :"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/editNewUsername"
+                    android:layout_width="228dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="93dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Email :"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="93dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Password : "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="120dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="55dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Confirm :"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="227dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editLastname"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/editNewPassword"
+                    android:layout_width="224dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cbxIsCareKeeper"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/editConfirm"
+                    android:layout_width="221dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editNewPassword"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="142dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="130dp"
+                    android:text="Sign Up"
+                    app:cornerRadius="25px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editConfirm" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Firstname :"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/editFirstname"
+                    android:layout_width="228dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editNewUsername"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/editLastname"
+                    android:layout_width="228dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editFirstname"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text="Lastname :"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <CheckBox
+                    android:id="@+id/cbxIsCareKeeper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="30dp"
+                    android:buttonTint="#000000"
+                    android:checked="false"
+                    android:fontFamily="@font/frankie_healthy"
+                    android:text=" Carekeeper"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
